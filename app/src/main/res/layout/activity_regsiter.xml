@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/abcss"
+    tools:context=".Login.RegsiterActivity">
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/lion"
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="150dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tx1"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wellcome"
+                android:textStyle="bold"
+                android:textColor="@color/yellow_200"
+                android:fontFamily="@font/toma"
+                android:textSize="50sp"
+
+                />
+            <TextView
+                android:id="@+id/tx2"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/mogi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sing in continue "
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:textColor="@color/yellow_200"
+
+                />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:hint="Email"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"/>
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:hint="Password"
+                    app:passwordToggleEnabled = "true"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+                    android:inputType="textPassword" />
+                <EditText
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/pass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:hint=" Confirm Password"
+                    app:passwordToggleEnabled = "true"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:textColor="@color/black"
+                    android:background="@color/teal_200"
+                    android:id="@+id/btnregsiter"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng Ký" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
